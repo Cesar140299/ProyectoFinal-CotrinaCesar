@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+$color-header: rgb(69, 71, 95);
+
+// Estilos Index
+
+@import "estilos/_index";
+
+// Estilos Nosotoros
+
+@import "estilos/_nosotros";
+
+// Estilos Servicios
+
+@import "estilos/_servicios";
+
+// Estilos Ubicacion
+
+@import "estilos/_ubicacion";
+
+// Estilos Contacto
+
+@import "estilos/_contacto";
+
+// Responsive
+
+@import "estilos/_responsive";
+

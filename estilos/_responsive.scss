@@ -1,0 +1,111 @@
+// Responsive hasta 576px
+
+/* Responsive Home */
+@media only screen and (min-width: 0) and (max-width: 576px) {
+    .lista {
+        padding: 2px;
+        flex-wrap: wrap;
+    }
+    .home {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .call {
+        padding-left: 5px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 1000px){
+.home {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+/* Responsive Sobre Nosotros */
+
+@media only screen and (min-width: 0) and (max-width: 576px) {
+    .nosotros div h2 {
+        font-size: 35px;
+    }
+    .dra__nelly--titulo {
+        font-size: 25px;
+    }
+    .dra__nelly--estudios {
+        font-size: 15px;
+        padding: 2px;
+        margin: 2px;
+    }
+    .dr__cesar--estudios {
+        font-size: 15px;
+    }
+    .dr__cesar--titulo {
+        font-size: 25px;
+    }
+}
+
+/* Responsive Servicios */
+@media only screen and (min-width: 0) and (max-width: 576px) {
+    .servicios__galeria--titulo {
+        font-size: 35px;
+    }
+    .servicios__galeria--trabajos li {
+        font-size: 22px;
+    }
+    .ciru__galeria--imagen,
+    .perio__galeria--imagen,
+    .endo__galeria--imagen,
+    .protesis__galeria--imagen,
+    .estomato__galeria--imagen,
+    .estetica__galeria--imagen,
+    .cod__galeria--imagen,
+    .ortodoncia__galeria--imagen {
+        filter: grayscale(10%);
+    }
+    .ciru__galeria--titulo,
+    .perio__galeria--titulo,
+    .endo__galeria--titulo,
+    .protesis__galeria--titulo,
+    .estomato__galeria--titulo,
+    .estetica__galeria--titulo,
+    .cod__galeria--titulo,
+    .ortodoncia__galeria--titulo {
+        font-size: 30px;
+    }
+    .ciru__galeria--texto,
+    .perio__galeria--texto,
+    .endo__galeria--texto,
+    .protesis__galeria--texto,
+    .estomato__galeria--texto,
+    .estetica__galeria--texto,
+    .cod__galeria--texto,
+    .ortodoncia__galeria--texto {
+        font-size: 20px;
+    }
+    .comunicacion {
+        font-size: 20px;
+    }
+
+}
+
+/* Responsive Ubicacion */
+
+@media only screen and (min-width: 0) and (max-width: 576px) {
+    .ubicacion__titulo {
+        align-items: center;
+        padding-top: 100px;
+    }
+}
+
+/* Responsive Contacto */
+@media only screen and (min-width: 0) and (max-width: 576px) {
+    .form {
+        width: 80% !important;
+    }
+}

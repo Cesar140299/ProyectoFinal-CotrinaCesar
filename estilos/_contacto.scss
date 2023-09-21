@@ -1,0 +1,59 @@
+.contacto {
+    height: calc(100vh - 5em);
+    width: 100%;
+    .contacto__galeria {
+        height: 100%;
+        background-color: #e9e8ed;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        .contacto__galeria--imagen {
+            background-image: url(imagenes/simbolo\ de\ medicina\ flores\ azules\ sin\ fondo.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            grid-column: 4/6;
+            grid-row: 1/4;
+            transition: all 0.8s
+        }
+        .contacto__galeria--imagen:hover {
+            transform: scale(1.1);
+        }
+        .contacto__galeria--titulo {
+            grid-column: 1/4;
+            grid-row: 1/2;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            font-size: 40px;
+            padding: 10px 10px 5px 10px;
+        }
+        .contacto__galeria--formulario {
+            grid-column: 1/4;
+            grid-row: 2/4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            form {
+                background: rgba(0, 0, 0, 0);
+                padding: 10px 20px;
+                width: 50%;
+                min-height: 50%;
+                display: flex;
+                flex-direction: column;
+                input,
+                textarea {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    padding: 5px;
+                }
+                textarea:hover {
+                    background-color: #088ea336;
+                }
+                input:hover {
+                    background-color: #088ea336;
+                }
+            }
+        }
+    }
+}

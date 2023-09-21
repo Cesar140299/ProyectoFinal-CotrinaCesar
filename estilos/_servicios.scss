@@ -1,0 +1,350 @@
+.servicios {
+    height: calc(100vh - 5em);
+    width: 100%;
+
+    .servicios__galeria {
+        height: 100%;
+        background-color: #e9e8ed;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        transition: all 1s
+    }
+
+    .servicios__galeria--imagen {
+        background-image: url(imagenes/diente\ cubierto\ de\ flores\ sin\ fondo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        grid-column: 4/6;
+        grid-row: 1/4;
+        filter: grayscale(50%);
+    }
+
+    .servicios__galeria--titulo {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        padding: 10px 10px 5px 10px;
+    }
+
+    .servicios__galeria--trabajos {
+        grid-column: 1/4;
+        grid-row: 2/4;
+
+        li {
+            font-size: 25px;
+            padding: 7px 7px 7px 25px;
+            display: flex;
+            align-items: center;
+
+            a:link {
+                color: black;
+            }
+
+            a:visited {
+                color: black;
+            }
+
+            a:hover {
+                transform: scale(1.2);
+                padding-left: 20px;
+                color: #088fa3;
+            }
+        }
+
+    }
+}
+
+@mixin altura {
+    height: 100vh;
+    width: 100%;
+}
+
+@mixin galeria {
+    height: 100%;
+    background-color: #e9e8ed;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+@mixin imagen {
+    background-image: url(imagenes/heramientas\ con\ flores\ ciru\ sin\ fondo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    grid-column: 4/6;
+    grid-row: 1/-1;
+    filter: grayscale(50%);
+    transition: all 0.8s;
+}
+
+@mixin hover-imagen {
+    filter: grayscale(0%);
+    transform: scale(1.08);
+}
+
+@mixin titulo {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding: 10px
+}
+
+@mixin texto {
+    grid-column: 1/4;
+    grid-row: 2/-1;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+
+    a {
+        margin: 50px;
+    }
+}
+
+.ciru {
+    @include altura;
+
+    .ciru__galeria {
+        @include galeria;
+
+        .ciru__galeria--imagen {
+            @include imagen;
+        }
+
+        .ciru__galeria--imagen:hover {
+            @include hover-imagen;
+        }
+
+        .ciru__galeria--titulo {
+            @include titulo;
+        }
+
+        .ciru__galeria--texto {
+            @include texto;
+        }
+    }
+}
+
+.comunicacion {
+    display: inline-block;
+    width: 150px;
+    font-size: 25px;
+}
+
+.comunicacion:visited {
+    color: #000;
+}
+
+.comunicacion:link {
+    color: #000;
+}
+
+.comunicacion:hover {
+    transform: scale(1.08);
+    transition: all 0.3s;
+    background-color: #088fa3;
+    color: #000;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 15px;
+}
+
+.perio {
+    @include altura;
+
+    .perio__galeria {
+        @include galeria;
+
+        .perio__galeria--imagen {
+            @include imagen;
+            background-image: url(imagenes/herramientas\ con\ flores\ perio\ sin\ fondo.png);
+        }
+
+        .perio__galeria--imagen:hover {
+            @include hover-imagen;
+        }
+
+        .perio__galeria--titulo {
+            @include titulo;
+        }
+
+        .perio__galeria--texto {
+            @include texto;
+        }
+    }
+}
+
+.endo {
+    @include altura;
+
+    .endo__galeria {
+        @include galeria;
+
+        .endo__galeria--imagen {
+            @include imagen;
+            background-image: url(imagenes/endo\ flores\ sin\ fondo.png);
+        }
+
+        .endo__galeria--imagen:hover {
+            @include hover-imagen;
+        }
+
+        .endo__galeria--titulo {
+            @include titulo;
+        }
+
+        .endo__galeria--texto {
+            @include texto;
+        }
+    }
+}
+
+.protesis {
+    @include altura;
+
+    .protesis__galeria {
+        @include galeria;
+
+        .protesis__galeria--imagen {
+            @include imagen;
+            background-image: url(imagenes/protesis\ flores\ sin\ fondo.png);
+        }
+
+        .protesis__galeria--imagen:hover {
+            @include hover-imagen;
+        }
+
+        .protesis__galeria--titulo {
+            @include titulo;
+        }
+
+        .protesis__galeria--texto {
+            @include texto;
+        }
+    }
+}
+
+.estomato {
+    @include altura;
+
+    .estomato__galeria {
+        @include galeria;
+
+        .estomato__galeria--imagen {
+            @include imagen;
+            background-image: url(imagenes/microscopio\ con\ flores\ sin\ fondo.png);
+        }
+
+        .estomato__galeria--imagen:hover {
+            @include hover-imagen;
+        }
+
+        .estomato__galeria--titulo {
+            @include titulo;
+        }
+
+        .estomato__galeria--texto {
+            @include texto;
+        }
+    }
+}
+
+.estetica {
+    @include altura;
+
+    .estetica__galeria {
+        @include galeria;
+
+        .estetica__galeria--imagen {
+            @include imagen;
+            background-image: url(imagenes/revision\ dental\ flores\ sin\ fondo.png);
+        }
+
+        .estetica__galeria--imagen:hover {
+            @include hover-imagen;
+        }
+
+        .estetica__galeria--titulo {
+            @include titulo;
+        }
+
+        .estetica__galeria--texto {
+            @include texto;
+        }
+    }
+}
+
+.cod {
+    @include altura;
+
+    .cod__galeria {
+        @include galeria;
+
+        .cod__galeria--imagen {
+            @include imagen;
+            background-image: url(imagenes/herramientas\ para\ cod\ sin\ fondo.png);
+        }
+
+        .cod__galeria--imagen:hover {
+            @include hover-imagen;
+        }
+
+        .cod__galeria--titulo {
+            @include titulo;
+        }
+
+        .cod__galeria--texto {
+            @include texto;
+        }
+    }
+}
+
+.ortodoncia {
+    @include altura;
+
+    .ortodoncia__galeria {
+        @include galeria;
+
+        .ortodoncia__galeria--imagen {
+            @include imagen;
+            background-image: url(imagenes/sonrisa\ flores\ rojas\ sin\ fondo.png);
+        }
+
+        .ortodoncia__galeria--imagen:hover {
+            @include hover-imagen;
+        }
+
+        .ortodoncia__galeria--titulo {
+            @include titulo;
+        }
+
+        .ortodoncia__galeria--texto {
+            @include texto;
+        }
+    }
+}
+
+.subir {
+    height: 40px;
+    width: 40px;
+    color: #000;
+    background-color: #0c8da3;
+    position: fixed;
+    right: 40px;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}

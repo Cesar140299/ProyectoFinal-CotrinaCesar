@@ -1,0 +1,51 @@
+.col-12 {
+    padding: 0px;
+}
+
+.header {
+    nav {
+        ul {
+            li {
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.ubicacion {
+    height: calc(100vh - 80px);
+    background-color: #e9e8ed;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    .ubicacion__imagen {
+        background-image: url(imagenes/diente\ colibri\ sin\ fondo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        grid-column: 4/-1;
+        grid-row: 1/-1;
+        filter: grayscale(70%);
+        transition: all 0.8s;
+    }
+    .ubicacion__imagen:hover {
+        filter: grayscale(8%);
+        transform: scale(1.2);
+    }
+    .ubicacion__titulo {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mapa {
+        width: 70%;
+        grid-column: 1/4;
+        grid-row: 2/-1;
+        border: #000 solid 2px;
+        margin: 50px;
+    }
+}

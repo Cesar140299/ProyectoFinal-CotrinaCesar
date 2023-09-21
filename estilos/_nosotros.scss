@@ -1,0 +1,147 @@
+.nosotros {
+    height: calc(100vh - 5em);
+    width: 100%;
+    background-color: #121213d0;
+    display: flex;
+    justify-content: flex-start;
+    background-image: url(imagenes/fondo\ profesionales.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    div {
+        width: 50%;
+        height: 50%;
+        margin: 50px;
+        h1 {
+            font-size: 3em;
+            padding-bottom: 0.7em;
+        }
+        p {
+            font-size: 1.5em;
+            padding-bottom: 1em;
+        }
+        a {
+            font-size: 1.7em;
+        }
+        a:link {
+            color: rgb(23, 173, 173);
+        }
+        a:visited {
+            color: rgb(23, 173, 173);
+        }
+        a:hover {
+            color: #000;
+            background-color: #1697a8;
+            border-radius: 5px;
+            box-shadow: 6px 5px 15px;
+        }
+    }
+}
+
+.dra__nelly {
+    min-height: 100vh;
+    width: 100%;
+    .galeria {
+        height: 100%;
+        background-color: #e9e8ed;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        transition: all 1s;
+    }
+    .dra__nelly--imagen {
+        min-height: 100vh;
+        background-image: url(imagenes/dientes\ flores\ azules\ sin\ fondo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        grid-column: 4/6;
+        grid-row: 1/4;
+        filter: grayscale(80%);
+        transition: all 0.8s;
+    }
+    .dra__nelly--imagen:hover {
+        filter: grayscale(0%);
+        transform: scale(1.08);
+    }
+    .dra__nelly--titulo {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        padding: 10px;
+    }
+    .dra__nelly--estudios {
+        grid-column: 1/4;
+        grid-row: 2/4;
+        ul {
+            li {
+                font-size: 25px;
+                padding: 10px 10px 10px 30px;
+                display: flex;
+                align-items: center;
+                transition: all 0.8s;
+            }
+            li:hover {
+                transform: scale(1.08);
+                color: #088fa3;
+            }
+        }
+    }
+}
+
+.dr__cesar {
+    min-height: 100vh;
+    width: 100%;
+    .galeria {
+        height: 100%;
+        background-color: #e9e8ed;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        transition: all 1s;
+    }
+    .dr__cesar--imagen {
+        min-height: 100vh;
+        background-image: url(imagenes/mandibula\ flores\ sin\ fondo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        grid-column: 4/6;
+        grid-row: 1/4;
+        filter: grayscale(80%);
+        transition: all 0.8s;
+    }
+    .dr__cesar--imagen:hover {
+        filter: grayscale(5%);
+        transform: scale(1.08);
+    }
+    .dr__cesar--titulo {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        padding: 10px;
+    }
+    .dr__cesar--estudios {
+        grid-column: 1/4;
+        grid-row: 2/4;
+        ul {
+            li {
+                font-size: 25px;
+                padding: 10px 10px 10px 30px;
+                display: flex;
+                align-items: center;
+                transition: all 0.8s;
+            }
+            li:hover {
+                transform: scale(1.08);
+                color: #088fa3;
+            }
+        }
+    }
+}
